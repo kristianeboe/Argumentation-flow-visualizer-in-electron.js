@@ -1,0 +1,30 @@
+{
+  "name": "safety-argument-extraction-tool",
+  "productName": "InStrucT for SAE – Information Structuring Tool applied for Safety Argument Extraction",
+  "version": "1.0.0",
+  "description": "Safety Argument Extraction Tool",
+  "main": "app/js/main.js",
+  "scripts": {
+    "start": "electron .",
+    "docs": "node_modules/.bin/jsdoc -d docs app/js/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikaila94/SafetyArgumentExtractionTool.git"
+  },
+  "author": "Mikail Arslan <mikailarz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikaila94/SafetyArgumentExtractionTool/issues"
+  },
+  "homepage": "https://github.com/Mikaila94/SafetyArgumentExtractionTool#readme",
+  "devDependencies": {
+    "electron": "^1.3.5",
+    "electron-packager": "^8.1.0",
+    "jsdoc": "^3.4.1"
+  },
+  "dependencies": {
+    "cytoscape": "^2.7.10",
+    "cytoscape-edgehandles": "^2.6.0"
+  }
+}

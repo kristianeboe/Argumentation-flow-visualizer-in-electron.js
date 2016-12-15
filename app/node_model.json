@@ -1,0 +1,39 @@
+{
+  "annotation_file_id": "123456",
+  "pdf_file_id": "2345677",
+  "nodes":{
+    "node1": {
+      "Name": "Claim1",
+      "text_from_paragraph":"Pigs can fly",
+      "page":1,
+      "x":54.3,
+      "y":200,
+      "type":"claim",
+      "color": "#FFFF",
+      "can_be_leaf_node":false,
+      neighbours: []
+    },
+    "node2": {
+      "Name": "Context1",
+      "text_from_paragraph":"In my head",
+      "page":1,
+      "x":54.3,
+      "y":140,
+      "type":"context",
+      "color": "#FFFF",
+      "can_be_leaf_node":true,
+      neighbours: ["node1, node3"]
+    },
+    "node3": {
+      "Name": "Evidence1",
+      "text_from_paragraph":"Because they are imaginary",
+      "page":1,
+      "x":54.3,
+      "y":70,
+      "type":"evidence",
+      "color": "#FFFF",
+      "can_be_leaf_node":true,
+      neighbours: ["node1"]
+    }
+  }
+}

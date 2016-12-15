@@ -1,0 +1,18 @@
+HWR-1149_ArgummentationModel
+
+E Claim CL 0 16711680
+E Evidence 1
+
+E Context 2 255 4 5 5 4613120
+
+
+
+(* oMG ADHGJDHKBDJLSKH
+R SupportingLink
+GFGH 4454 222 *)
+
+
+R SupportingLink Claim->Claim
+R EvidentialLink RL Evidence->Claim 13107300
+R ContextualLink Context->Claim  Context->Evidence 7929700 3 4 5 16761035
+

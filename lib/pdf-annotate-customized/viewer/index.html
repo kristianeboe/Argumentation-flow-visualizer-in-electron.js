@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>PDFJSAnnotate</title>
+  <link rel="stylesheet" type="text/css" href="shared/toolbar.css"/>
+  <link rel="stylesheet" type="text/css" href="shared/pdf_viewer.css"/>
+</head>
+<body>
+  <div class="toolbar">
+    <button class="cursor" type="button" title="Cursor" data-tooltype="cursor">&nbsp;</button>
+    <div class="spacer"></div>
+    <button class="highlight" type="button" title="Highlight" data-tooltype="highlight">&nbsp;</button>
+    <div class="spacer"></div>
+    <select class="scale">
+      <option value=".5">50%</option>
+      <option value="1">100%</option>
+      <option value="1.5">150%</option>
+      <option value="2">200%</option>
+    </select>
+    <div class="spacer"></div>
+    <div id="pageTracker" style="display:none">Page <span id="currentPage">1</span> of <span id="totalPages">x</span></div>
+    <div class="spacer"></div>
+    <div id="taggingRelation" style="display:none">
+      <button id='cancelTagging'><img src="cancel.png" title="Cancel relation tagging"></button>
+    </div>
+  </div>
+  <div id="content-wrapper">
+    <div id="viewer" class="pdfViewer"></div>
+  </div>
+  <script src="shared/pdf.js"></script>
+  <script src="shared/pdf_viewer.js"></script>
+  <script src="../dist/pdf-annotate.js"></script>
+  <script src="../../../app/js/viewer.js"></script>
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="rangefix.js"></script>
+</body>
+</html>

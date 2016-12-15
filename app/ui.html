@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Init-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--CSS-->
+    <link href="css/graph_style.css" rel="stylesheet" type="text/css" />
+    <link href="css/photon.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body tabindex="1">
+    <!--Main body-->
+    <div class="window">
+        <header class="toolbar toolbar-header">
+            <div class="toolbar-actions pull-left">
+                <div class="btn-group">
+                    <button id="load_pdf_btn" class="btn btn-default">
+                        <span class="icon icon-newspaper icon-text"></span>
+                        Load PDF file
+                    </button>
+                    <button id="load_arg_model_btn" class="btn btn-default">
+                        <span class="icon icon-folder icon-text"></span>
+                        <span id="argModel">Load arg. model</span>
+                    </button>
+                </div>
+            </div>
+            <div class="toolbar-actions pull-right">
+                <div class="btn-group">
+                    <button id="load_graph_btn" class="btn btn-default">
+                        <span class="icon icon-share icon-text"></span>
+                        Open graph
+                    </button>
+                    <button id="save_btn" class="btn btn-default">
+                        <span class="icon icon-floppy icon-text"></span>
+                        Save graph
+                    </button>
+                    <button id="save_btn_png" class="btn btn-default">
+                        <span class="icon icon-picture icon-text"></span>
+                        Save graph to .png
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane">
+                    <div id="viewerContainer">
+                        <iframe id="viewer" src="../lib/pdf-annotate-customized/viewer/index.html" onLoad="sourceLoaded()" scrolling='no'></iframe>
+                    </div>
+                </div>
+                <div class="pane">
+                    <div id="graphContainer">
+                        <div id="buttons">
+                            <button id="expandButton">Expand node</button>
+                            <button id="collapseButton">Collapse node and sub-nodes</button>
+                            <button id="leafNodeCheckButton">Check legal leaf properties</button>
+                            <button id="checkConnectednessButton">Check connectedness</button>
+                            <button id="removeNodeButton">Remove node</button>
+                            <!--<button id="draw_claim_relation">Draw claim relation</button>
+                            <button id="draw_evidence_relation">Draw evidence relation</button>-->
+                        </div>
+                        <div id="cy"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Main body end-->
+
+    <!--Scripts-->
+    <script type="text/javascript">
+        window.$ = window.jQuery = require('../lib/jquery-3.1.1.min.js');
+    </script>
+
+    <script type="text/javascript">
+        require("./js/renderer.js")
+    </script>
+
+    <script type="text/javascript">
+        require("./js/edgehandles.js")
+    </script>
+    <script type="text/javascript">
+        require("./js/test_node_structures/example_graph.js")
+    </script>
+
+    <script type="text/javascript">
+        require("./js/graph.js")
+    </script>
+
+    <script type="text/javascript">
+        require("./js/graph_io.js")
+    </script>
+
+    <script type="text/javascript">
+        require("./js/io.js")
+    </script>
+</body>
+
+</html>
