@@ -1,4 +1,5 @@
 # SafetyArgumentExtractionTool
+Created by Kristian Elset Bø, Signe Livgård,Bjørnar Vassøy, William Janoti and Mikail Arslan for the Customer Driven Project at NTNU.
 
 ## Running the app
 
